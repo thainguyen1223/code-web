@@ -1,0 +1,140 @@
+body {
+  font-family: "TCCC-UnityText-Regular", "TCCC-UnityText", sans-serif;
+}
+a {
+  color: black;
+}
+a:hover {
+  text-decoration-color: red;
+  color: black;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.nav {
+  border-bottom: 1px solid black;
+}
+.header img {
+  height: 3.75rem;
+  max-width: 100%;
+}
+.nav-item {
+  padding: 4px 1.1rem 0 1.1rem;
+  margin: 10px 0;
+}
+.content-1 a:hover,
+.right ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+.content {
+  position: relative;
+}
+.content-1 {
+  background-image: url("../img/content1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top 20%;
+  height: 100%;
+  width: 100%;
+}
+.content-2 {
+  background-image: url("../img/content-2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top 20%;
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  margin: 30px 0;
+}
+.content-1 p,
+.content-1 h5 {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  text-align: left;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.6));
+  margin-bottom: 15px;
+}
+.text {
+  margin: 5.5rem 0;
+  width: 25%;
+}
+.scroll-down img {
+  height: 48px;
+  padding: 0;
+  vertical-align: text-bottom;
+  bottom: 2rem;
+}
+.scroll-down {
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll-down span {
+  font-size: 1rem;
+  display: block;
+  color: rgb(255, 255, 255);
+}
+.details {
+  margin-left: 8.33333333%;
+  margin-right: 8.33333333%;
+}
+.btn {
+  position: relative;
+  text-transform: uppercase;
+  text-align: left;
+  display: block;
+  font-style: normal !important;
+  line-height: 1.375rem !important;
+  padding: 14rem 0;
+  margin-top: -14rem;
+  margin-bottom: -14rem;
+}
+.content-1 a,
+.right ul li a {
+  color: white;
+}
+.content-2 a:hover {
+  color: black;
+  text-decoration: none;
+}
+.footer {
+  background-color: #4a4a4a;
+  border-top: 1px solid white;
+}
+.footer img {
+  max-width: 16rem;
+  padding: 0.5rem 0;
+}
+.f-content {
+  margin-top: 2.3125rem;
+  border-bottom: none;
+}
+
+.coppyright {
+  color: white;
+  margin-top: 1.375rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.75rem;
+}
+.right ul {
+  display: inline-block;
+  padding: 0;
+}
+.right ul li {
+  display: inline-block;
+  color: white;
+  text-align: left;
+}
+.right ul li a {
+  border-right: 0;
+  padding: 0px 0px 2px 16px;
+}

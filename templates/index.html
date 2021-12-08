@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/style.css') }}"
+    />
+
+    <title>The Coca-Cola</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <img
+          src="{{ url_for('static', filename='img/coca-cola-company-black-logo.svg') }}"
+          alt=""
+          class="center"
+        />
+      </div>
+    </div>
+
+    <div class="nav d-flex justify-content-center">
+      {%for item in navbar%}
+      <div class="nav-item">
+        {%if item == "Coca-Cola Việt Nam"%}
+        <a href="{{ url_for('infor') }}">{{item}}</a>
+        {%else%}
+        <a href="#">{{item}}</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+      <a href=""><i class="fas fa-search"></i></a>
+    </div>
+
+    <div class="content">
+      <div class="content-1">
+        <div class="container">
+          <div class="details d-flex align-items-center justify-content-end">
+            <div class="scroll-down">
+              <img
+                src="{{ url_for('static', filename='img/scroll-down.png') }}"
+                alt=""
+              />
+              <span>Cuộn</span>
+            </div>
+            <div class="text">
+              <a href="{{ url_for('infor') }}">
+                <h5>{{title1}}</h5>
+                <p>{{content1}}</p>
+                <div class="btn">THÔNG TIN VỀ CÔNG TY COCA-COLA</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-2">
+        <div class="container">
+          <div class="details d-flex align-items-center justify-content-start">
+            <div class="scroll-down">
+              <img
+                src="{{ url_for('static', filename='img/scroll-down.png') }}"
+                alt=""
+              />
+              <span>Cuộn</span>
+            </div>
+            <div class="text">
+              <a href="#">
+                <h5>{{title2}}</h5>
+                <p>{{content2}}</p>
+                <div class="btn">
+                  tìm hiểu về các nhãn hàng của CÔNG TY COCA-COLA
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="f-content d-flex justify-content-between">
+          <div class="left">
+            <img
+              src="{{ url_for('static', filename='img/coca-cola-company-black-logo.svg') }}"
+              alt=""
+            />
+            <p class="coppyright">{{coppyright}}</p>
+          </div>
+          <div class="right">
+            <ul>
+              {%for item in footer%}
+
+              <li><a href="#">{{item.text}}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  font-family: "TCCC-UnityText-Regular", "TCCC-UnityText", sans-serif;
+}
+a {
+  color: black;
+}
+a:hover {
+  text-decoration-color: red;
+  color: black;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+img {
+  width: 100%;
+}
+.nav {
+  border-bottom: 1px solid black;
+}
+.header img {
+  height: 3.75rem;
+  max-width: 100%;
+}
+.nav-item {
+  padding: 4px 1.1rem 0 1.1rem;
+  margin: 10px 0;
+}
+.footer {
+  background-color: #4a4a4a;
+  border-top: 1px solid white;
+}
+.footer img {
+  max-width: 16rem;
+  padding: 0.5rem 0;
+}
+.f-content {
+  margin-top: 2.3125rem;
+  border-bottom: none;
+}
+
+.coppyright {
+  color: white;
+  margin-top: 1.375rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.75rem;
+}
+.right ul {
+  display: inline-block;
+  padding: 0;
+}
+.right ul li {
+  display: inline-block;
+  color: white;
+  text-align: left;
+}
+.right ul li a {
+  border-right: 0;
+  padding: 0px 0px 2px 16px;
+}
+.right ul li a {
+  color: white;
+}
+
+.banner-content {
+  background-image: url("../img/banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 100%;
+}
+.banner h1 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+.content .text {
+  text-align: center;
+  padding: 1.5rem;
+  margin: 48px 0;
+  max-width: 900px;
+}
+.text-container {
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  font-size: 1.6875rem;
+  line-height: 1.9375rem;
+  margin-top: 48px;
+  margin-bottom: 1rem;
+}
+h3,
+p {
+  padding: 0 64px;
+}
+.content img {
+  padding: 48px 0;
+}
